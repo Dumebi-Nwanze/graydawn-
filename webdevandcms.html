@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Graydawn - Web App & Web CMS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicons//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicons//favicon-16x16.png"
+    />
+    <link rel="manifest" href="/img/favicons//site.webmanifest" />
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>American Corner Ikeja, 42, 
+            Local Airport Road, Concord Bus stop Ikeja, Lagos 102214</small>
+                <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>9.00 am - 9.00 pm</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small><i class="fa fa-envelope text-primary me-2"></i>graydawninc@gmail.com</small>
+                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>+234 907 732 3249</small>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="display-5 text-primary m-0">Graydawn</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu border-light m-0">
+                            <a href="project.html" class="dropdown-item">Projects</a>
+                            <a href="feature.html" class="dropdown-item">Features</a>
+                            <a href="team.html" class="dropdown-item">Team Member</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="d-none d-lg-flex ms-2">
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                        <small class="fab fa-facebook-f text-primary"></small>
+                    </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                        <small class="fab fa-twitter text-primary"></small>
+                    </a>
+                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                        <small class="fab fa-linkedin-in text-primary"></small>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/cmscarousel.png" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-8">
+                                    <!-- <p
+                                        class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
+                                        Welcome to Graydawn</p> -->
+                                    <h6 class="display-1 mb-4 animated slideInDown">Web App & CMS Development Services
+                                    </h6>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Get Started Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- plain paragraph start -->
+    <div class="paragraph-plain">
+        <!-- <h4>Custom Software Development Services</h4> -->
+        <p>
+            With over a decade years of experience in the Industry, we are the first choice consulting partner when clients look for a Web Application Development service that perfectly aligns with the client's business processes and goals. We deliver high user experience, secure and data driven web based solutions for various business requirements. GrayDawn specializes in engineering highly intuitive web solutions and delivering on-going support development, while still saving clients more than 60% on their development costs.</p>
+      </div>
+    <!-- parapgraph start -->
+
+    <!-- stats start  -->
+    <center><h4>We are at Your Disposal</h4></center>
+     <div class="container-xxl py-5">
+        <div class="container">
+    <div class="border rounded p-4 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="row g-4">
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                <div class="h-100">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                            <i class="fas fa-tools text-white"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h4>50+ <br>IT Professionals</h4>
+                            <span>Our diverse team of professionals are ready to tackle your challenges and drive your projects to success.</span>
+                        </div>
+                        <div class="border-end d-none d-lg-block"></div>
+                    </div>
+                    <div class="border-bottom mt-4 d-block d-lg-none"></div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                <div class="h-100">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                            <i class="fas fa-calendar-alt text-white"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h4>A Decade <br>of Experience</h4>
+                            <span>We bring a wealth of knowledge and expertise gained over the past decade.</span>
+                        </div>
+                        <div class="border-end d-none d-lg-block"></div>
+                    </div>
+                    <div class="border-bottom mt-4 d-block d-lg-none"></div>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                <div class="h-100">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                            <i class="fas fa-flask text-white"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h4>Access to <br>R&D Lab</h4>
+                            <span>Our team of experts pioneer innovative solutions & experiment with the latest technologies.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <!-- stats end -->
+
+     <!-- plain paragraph start -->
+     <div class="paragraph-plain">
+        <!-- <h4>Benefit of choosing GrayDawn for custom software development</h4> -->
+        <p>
+            GrayDawn is an ISO certifiable Company, offering web application development services, using various technologies and frameworks to achieve set goals. Our expertise and vast technical network aids in engineering and integrating intuitive web solutions for both SME & large corporations across various industries and niches.
+We provide both our standard packages and custom-made web solutions based on customer requirement, needs and budget.
+
+        </p>
+      </div>
+
+      <!-- technologies start  -->
+      <center><h5>Explore Technologies & Frameworks we Work On</h5></center><br>
+      <div class="partner-section">
+        <div class="partner-box">
+            <img src="img/technologies/angular.png" alt="Partner 1">
+            <p><b>Angular Web App</b></p>
+        </div>
+        <div class="partner-box">
+            <img src="img/technologies/java.png" alt="Partner 1">
+            <p><b>Java</b></p>
+        </div>
+        <div class="partner-box">
+            <img src="img/technologies/js.png" alt="Partner 1">
+            <p><b>JavaScript</b></p>
+        </div>
+        <div class="partner-box">
+            <img src="img/technologies/laravel.png" alt="Partner 1">
+            <p><b>Laravel</b></p>
+        </div>
+        <div class="partner-box">
+            <img src="img/technologies/magento.png" alt="Partner 1">
+            <p><b>Magento</b></p>
+        </div>
+        <div class="partner-box">
+            <img src="img/technologies/mysql.png" alt="Partner 1">
+            <p><b>MySQL</b></p>
+        </div>
+        <div class="partner-box">
+            <img src="img/technologies/netdev.png" alt="Partner 1">
+            <p><b>.Net Dev </b></p>
+        </div>
+        <div class="partner-box">
+            <img src="img/technologies/node.png" alt="Partner 1">
+            <p><b>Node JS</b></p>
+        </div>
+        <div class="partner-box">
+            <img src="img/technologies/opencare.png" alt="Partner 1">
+            <p><b>Opencart</b></p>
+        </div>
+        <div class="partner-box">
+            <img src="img/technologies/php.png" alt="Partner 1">
+            <p><b>PHP</b></p>
+        </div>
+        <div class="partner-box">
+            <img src="img/technologies/python.png" alt="Partner 1">
+            <p><b>Python</b></p>
+        </div>
+        <div class="partner-box">
+            <img src="img/technologies/react.png" alt="Partner 1">
+            <p><b>React JS</b></p>
+        </div>
+        <div class="partner-box">
+            <img src="img/technologies/shopify.png" alt="Partner 1">
+            <p><b>Shopify</b></p>
+        </div>
+        <div class="partner-box">
+            <img src="img/technologies/vue.png" alt="Partner 1">
+            <p><b>Vue JS</b></p>
+        </div>
+        <div class="partner-box">
+            <img src="img/technologies/wordpress.png" alt="Partner 2">
+            <p><b>WordPress</b></p>
+        </div>
+        <!-- Repeat for other partners -->
+    </div>
+      <!-- technologies end -->
+
+      <!-- plain paragraph start -->
+    <div class="paragraph-plain">
+        <h4>Web Application Development & Web Content Management Services</h4>
+        <p>
+            Over the decade, in collaboration with various partners, have consulted for clients across regions. We are recognized for being hands-on partners with experience in custom web application development, enterprise web app development, website Content management system to ecommerce app development, and amongst other solutions.
+        </p>
+    </div>
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts my-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                
+            <center><h3 style="color: white;">Get Started with a Leading Web Application Development Company in Nigeria.</h3><br>
+              <p style="color: white;">
+                We make your ideas with an innovative product that exactly suits your business requirements.
+            </p><br>         
+                <a href="#" class="button2">Get Started Now</button></a>
+            </center>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+    
+    
+      
+
+    <!-- plain paragraph start -->
+    <div class="paragraph-plain">
+        <h4>Our Web Application Development Services</h4>
+        <p>
+            We engineer a range of web application development services that cater to all business needs and requirements. Our master web application developers help our clients in turning an idea into a product. <br>
+            Below is a list of our web application development services:       
+        </p>   
+        <p>
+            <div class="list-container">
+                <div class="list-column">
+                    <ul class="your-custoom-class">
+                        <li>CRM</li>
+                        <li>Ecommerce Web App Development</li>
+                        <li>Responsive Web App Designs</li>
+                        <li>Web Content Management System</li>
+                        <li>Enterprise Web Application Development</li>
+                    </ul>
+
+                </div>
+                <div class="list-column">
+                    <ul class="your-custoom-class">
+                        <li>Web Development Portals</li>
+                        <li>Progressive Web Application Development </li>
+                        <li>Custom ERP Solutions</li>
+                        <li>SAP Utilization and Integration</li>
+                        <li>24/7 Support and Maintenance Services</li>
+                    </ul>
+                </div>
+            </div>
+        </p>
+      </div>
+      <!--plain paragraph end  -->
+
+       <!-- Facts Start -->
+    <div class="container-fluid facts my-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                
+            <center><h3 style="color: white;">Need to Hire Web Application Developers for Your Business Requirements? </h3><br>
+              <p style="color: white;">
+                We are A Leading Web Application Development Company in Nigeria       </p><br>         
+                <a href="#" class="button2">Get Started Now</button></a>
+            </center>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+      
+
+    <!-- plain paragraph start -->
+    <div class="paragraph-plain">
+        <h4>Why Choose GrayDawn as Your Web Application Development Company</h4>
+        <p>
+            <br><b>Here's Why:</b>
+            <ul class="custom-list">
+                <li>Gain Access to Our Highly Talented Software Engineers</li>
+                <li>We Are Recognized for Being a Top Web Application Development Company In Nigeria</li>
+                <li>Access To Network of Web Application Developers Specializing on All Advanced Technologies</li>
+                <li>We Can Relate to Your Business Requirements and Provide Clear-Cut Solutions</li>
+                <li>Secure And Transparent Data-Driven Development Approach</li>
+                <li>Autonomous And Agile Development Process</li>
+                <li>Flexible Pricing Structures to Choose From.</li>
+                <li>Hands-On Experience Across All Major Industries</li>
+                <li>Get Transparency of Progress and Reports</li>
+                <li>Highly Cost-Effective Solutions</li>
+                <li>Hire Web App Developers at The Best Pricing</li>
+              </ul>
+        </p>
+      </div>
+    
+    <!-- plain paragraph start -->
+    <div class="paragraph-plain">
+        <center><h4>Web Content Management Services</h4></center>
+        <p>
+            Developing a website and providing support on a long-term basis is a challenging activity for SME businesses without an in-house IT department. In today's digital world and its rapidly changing trends, an organization’s online presence could become redundant without a Content Management System, which plays a critical role in website optimization and ROI.
+                Our Skilled CMS developers are what you need today to stay competitive in the digital space. We maintain your corporate website with solutions and upgrades in client existing CMS.
+        </p>   
+      </div>
+      <!--plain paragraph end  -->
+
+      <!-- quote section start  -->
+      <div class="quote-section">
+        <blockquote>
+            <p>
+                Your search ends here if you are in the lookout for a competitive Web Content Management System, as <b>GrayDawn</b> is all you need to stay consistent. Ring us today to get a free CMS consultation from any of our tech-gurus.
+            </p>
+        </blockquote>
+    </div>
+      <!-- quote section end  -->
+
+      <!-- plain paragraph start -->
+    <div class="paragraph-plain">
+        <h4>We are Intentional, Flexible, and Innovative in Functionality</h4>
+        <p>
+            We provide websites with quality User Interfaces that are simple to navigate, user interactive, with functionalities that reflect client’s business goals, objectives and services. <b>GrayDawn</b> offers its clients scalable and evolving software solutions that are cost effective and serve as strategic tools for client’s web-based Content Management Systems.
+            We help build scalable and efficient content management solutions that help maintain and organize client website content effortlessly.
+        </p>   
+      </div>
+      <!--plain paragraph end  -->
+
+       <!-- plain paragraph start -->
+    <div class="paragraph-plain">
+        <h4>Key Features of our Content Management System Solution</h4>
+        <p>
+            <ul class="custom-list">
+                <li>Redesign Your Existing Web Content to Generate More Leads</li>
+                <li>Easily Adapt to Changing Digital Trends </li>
+                <li>Operate According to Set Web Standards</li>
+                <li>Simple User Interface and User-Friendly Content Editor</li>
+                <li>Cost Friendly Conversion of Redundant Websites to A Dynamic One</li>
+                <li>Competent Site Administrator</li>
+                <li>Multiple Add-Ons, Extensions and Plug-Ins</li>
+                <li>Easy User Interface, Deployable with Minimum Technology Training</li>
+                <li>Search Engine optimization</li>
+            </ul>
+        </p>   
+      </div>
+      <!--plain paragraph end  -->
+
+      <!-- Facts Start -->
+    <div class="container-fluid facts my-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                
+            <center><h3 style="color: white;">What is the Use of a Content Management System?</h3><br>
+              <p style="color: white;">
+                Websites in the information era represent business presence and that plays a critical part in an organization’s growth. Free and open access to information, rapidly changing online trends and culture; distinct marketing strategies have made it compulsory for web applications to stay constantly updated. Our Content Management solutions ensure all round website uptime, secure and seamless distribution of information at an instant.               </p><br>
+            </center>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+    <!-- plain paragraph start -->
+    <div class="paragraph-plain">
+        <h4>Organize Your Web Content in a Structured Manner</h4>
+        <p>
+            With GrayDawn’s CMS solutions, any management personnel without a technical background can do anything with your website such as update content, post videos, images and insert designs etc.      
+        </p>   
+    </div>
+      <!--plain paragraph end  -->
+
+    <!-- plain paragraph start -->
+    <div class="paragraph-plain">
+        <h4>Editing Features</h4>  
+        <p>
+            <div class="list-container">
+                <div class="list-column">
+                    <ul class="your-custoom-class">
+                        <li>Interface Friendly Dashboard</li>
+                        <li>WYSIWYG Editor</li>
+                        <li>Rich Text Formatting</li>
+                        <li>Media Management</li>
+                        <li>Revision History</li>
+                    </ul>
+                </div>
+                <div class="list-column">
+                    <ul class="your-custoom-class">
+                        <li>Collaboration Tools</li>
+                        <li>Content Preview</li>
+                        <li>SEO Optimization</li>
+                        <li>Customization Options</li>
+                    </ul>
+                </div>
+            </div>
+        </p>
+      </div>
+      <!--plain paragraph end  -->
+
+      
+      <!-- features start -->
+      <br><center><div class="header-section">
+        <h3>Administrator Features</h3>
+      </div>
+    </center><br>
+      <div class="icon-text-section">
+        <div class="item">
+            <span class="lnr lnr-lock"></span>
+            <div class="text">Secure Administration</div>
+        </div>
+        <div class="item">
+            <span class="lnr lnr-users"></span>
+            <div class="text">Systemised User Management</div>
+        </div>
+        <div class="item">
+            <span class="lnr lnr-menu"></span>
+            <div class="text">Dynamic Menu Management</div>
+        </div>
+        <div class="item">
+            <span class="lnr lnr-move"></span>
+            <div class="text">Drag-n-Drop Content Editing Tool</div>
+        </div>
+        <div class="item">
+            <span class="lnr lnr-chart-bars"></span>
+            <div class="text">Web Analytics Solution</div>
+        </div>
+    </div>
+      <!-- features end -->
+
+      <!-- plain paragraph start -->
+    <div class="paragraph-plain">
+        <h4>Value Added Features</h4>  
+        <p>
+            <div class="list-container">
+                <div class="list-column">
+                    <ul class="your-custoom-class">
+                        <li>Cross Browser Functionality</li>
+                        <li>Broken Link Check</li>
+                        <li>Mobile Based Features</li>
+                        <li>Caching Engine</li>
+                    </ul>
+                </div>
+                <div class="list-column">
+                    <ul class="your-custoom-class">
+                        <li>SPAM Filter</li>
+                        <li>SEO Tools</li>
+                        <li>Scan And Internet Security</li>
+                        <li>Front End Content Editor</li>
+                    </ul>
+                </div>
+            </div>
+        </p>
+      </div>
+      <!--plain paragraph end  -->
+
+      <!-- features start -->
+      <br><center><div class="header-section">
+        <h3>CMS Applications</h3>
+      </div>
+    </center><br>
+      <div class="icon-text-section">
+        <div class="item">
+            <span class="lnr lnr-select"></span>
+            <div class="text">Web Content</div>
+        </div>
+        <div class="item">
+            <span class="lnr lnr-apartment"></span>
+            <div class="text">Intranet Content</div>
+        </div>
+        <div class="item">
+            <span class="lnr lnr-book"></span>
+            <div class="text">E-Publishing</div>
+        </div>
+        <div class="item">
+            <span class="lnr lnr-graduation-hat"></span>
+            <div class="text">E-Learning</div>
+        </div>
+        <div class="item">
+            <span class="lnr lnr-bookmark"></span>
+            <div class="text">Document & Knowledge Management</div>
+        </div>
+    </div>
+      <!-- features end -->
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts my-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                
+            <center><h3 style="color: white;">Start a Wonderful Journey with Us and Improve Your Work Quality!</h3><br>
+              <p style="color: white;">
+                You get assistance in all stages of your planning process. Whether you are a start-up or an enterprise we will guide you in overcoming your IT and software related challenges with uncompromising technical solutions. We are here to provide you with recommendations based on current market trends and changing scenarios.              </p><br>
+                <a href="#" class="button2">Get Form</button></a>
+            </center>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+    <!-- Footer Start -->
+  <div
+      class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Our Office</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>American Corner Ikeja,
+              42, Local Airport Road, Concord Bus stop Ikeja, Lagos 102214
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+234 907 732 3249
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i
+              ><a href="mailto:graydawninc@gmail.com">graydawninc@gmail.com</a>
+            </p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Services</h4>
+            <a class="btn btn-link" href="">AI and Machine Learning</a>
+            <a class="btn btn-link" href="">Cloud Solutions</a>
+            <a class="btn btn-link" href="">Custom Software Development</a>
+            <a class="btn btn-link" href="">Blockchain</a>
+            <!-- <a class="btn btn-link" href="">Business Analysis</a> -->
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Quick Links</h4>
+            <a class="btn btn-link" href="">About Us</a>
+            <a class="btn btn-link" href="">Contact Us</a>
+            <a class="btn btn-link" href="">Our Services</a>
+            <a class="btn btn-link" href="">Terms & Condition</a>
+            <a class="btn btn-link" href="">Support</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Newsletter</h4>
+            <p>Sign up to our newsletter to get recent updates</p>
+            <div class="position-relative w-100">
+              <input
+                class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Your email"
+              />
+              <button
+                type="button"
+                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                Sign up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a
+                    href="https://themewagon.com">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

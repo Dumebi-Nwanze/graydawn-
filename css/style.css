@@ -540,3 +540,282 @@ h6,
 .copyright a:hover {
     color: var(--primary);
 }
+
+
+.icon-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .icon-box {
+    flex: 0 0 calc(30% - 20px); /* Adjust the width as needed */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Add background-color transition */
+    background-color: #355efc; /* Initial background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .icon-box:hover {
+    transform: translateY(-10px);
+     /* Change background color on hover */
+  }
+
+  .icon-box:hover .icon,
+  .icon-box:hover h3,
+  .icon-box:hover p {
+    color: #e1e2e3; /* Change text color to white on hover */
+  }
+
+  .icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #FFFFFF; /* Initial text color */
+    transition: color 0.3s ease; /* Add text color transition */
+  }
+
+  .icon-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FFFFFF; /* Initial text color */
+    transition: color 0.3s ease; /* Add text color transition */
+  }
+
+  .icon-box p {
+    font-size: 16px;
+    color: #FFFFFF; /* Initial text color */
+    transition: color 0.3s ease; /* Add text color transition */
+    line-height: 1.6; 
+  }
+
+  .paragraph-section {
+    margin-top: 20px; /* Add space between icon boxes and paragraph section */
+    background-color:  #C8DCFF; /* Background color for paragraph section */
+    padding: 20px; /* Add padding to the paragraph section */
+    border-radius: 10px; /* Add border radius to the paragraph section */
+    line-height: 2.5;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .paragraph-plain {
+    margin-top: 20px; /* Add space between icon boxes and paragraph section */
+    /* background-color: #f0f0f0; Background color for paragraph section */
+    padding: 20px; /* Add padding to the paragraph section */
+    border-radius: 10px; /* Add border radius to the paragraph section */
+    line-height: 2.0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .button {
+    padding: 5px 50px;
+    background-color: #355efc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #2b4ac3;
+  }
+
+  .partner-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-left: 20px; /* Adjust left margin to offset the negative margin */
+      margin-right: 20px;
+  }
+
+  .partner-box {
+      width: calc(14.2857% - 20px); /* Adjust as needed for 5 boxes per row */
+      /* max-width: 100px; */
+      text-align: center;
+      margin-bottom: 20px; /* Adjust spacing between boxes */
+      border: 2px solid #ddd; /* Add border */
+      border-radius: 8px; /* Add border radius */
+      padding: 10px; /* Add padding */
+      box-sizing: border-box; /* Include padding and border in box size */
+      transition: transform 0.3s ease; /* Smooth transition */
+      /* margin-left: auto;
+      margin-right: auto; */
+  }
+
+  .partner-box:hover {
+      transform: translateY(-5px); /* Move the box up slightly on hover */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  }
+
+  .partner-box img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .partner-box p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+  }
+
+  @media only screen and (max-width: 600px) {
+      .partner-section {
+          justify-content: center; /* Center partner boxes horizontally */
+          margin-left: 0; /* Remove left margin */
+          margin-right: 0; /* Remove right margin */
+      }
+  
+      .partner-box {
+          width: calc(50% - 20px); /* Adjust as needed for 2 boxes per row */
+          padding: 5px; /* Add smaller padding */
+      }
+  }
+
+  /* @media screen and (max-width: 768px) {
+      .partner-box {
+          width: calc(25% - 20px); */
+
+  .list-container {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .list-column {
+      flex: 0 0 48%; /* Adjust as needed */
+      margin: 0 10px; /* Add left and right margin */
+  }
+
+  ul {
+      padding: 0;
+      list-style-type: disc; /* Use disc bullets */
+      margin-left: 20px; /* Indent the list */
+  }
+
+  li {
+      margin-bottom: 10px; /* Adjust spacing between items */
+  }
+
+  .custom-bullet {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .custom-bullet li {
+      padding-left: 25px; /* Adjusted padding to create space for the 20x20px image */
+      margin-bottom: 10px;
+      margin-left: 30px;
+      background-image: url('img/bullet (1).png'); /* Replace 'custom_bullet.png' with the path to your custom bullet image */
+      background-repeat: no-repeat;
+       background-size: 30px 30px; /*Set the size of the bullet point image */
+      background-position: 0 50%; /* Align the image vertically centered with the text */
+      line-height: 1.5;
+      padding-top: 2px; /* Adjusted padding to vertically center the text */
+    }
+
+  
+
+  .quote-section {
+      background-color: #355efc;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      margin-left: 20px; /* Added margin on the left */
+      margin-right: 20px; /* Added margin on the right */
+      width: auto; /* Adjust the width as needed */
+      height: 200px;
+      display: flex; /* Use flexbox */
+      align-items: center; /* Vertically center the content */
+  }
+  
+
+  blockquote {
+      font-style: italic;
+      font-size: 18px;
+      /* color: #333333; */
+      color: #FFFFFF;
+      margin-bottom: 10px;
+  }
+
+  cite {
+      display: block;
+      text-align: right;
+      font-style: normal;
+      color: #666;
+  }
+
+
+  .section-header {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+  }
+
+  .icon-text-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  
+  .item {
+      width: calc(20% - 20px); /* Adjust as needed for 5 items per row */
+      margin-bottom: 20px;
+      height: 180px; /* Adjust height as needed */
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      text-align: center;
+      color: white; /* Set text color to white */
+      background-color: #355efc; /* Set background color to #355efc */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center content vertically */
+      align-items: center; /* Center content horizontally */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Add background-color transition */
+  }
+  
+  .item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      background-color: #6a8fff; /* Change background color to #6a8fff on hover */
+  }
+  
+  .item .lnr {
+      font-size: 45px; /* Adjust icon size */
+      color: white; /* Set icon color to white */
+      margin-bottom: 10px;
+      display: block;
+  }
+  
+  .item .text {
+      font-size: 15px;
+      font-weight: light;
+      display: block;
+      color: white; /* Set text color to white */
+  }
+  
+  
+  /* Media Query for Mobile */
+  @media screen and (max-width: 768px) {
+      .icon-text-section {
+          /* justify-content: center; Center items horizontally */
+          margin-bottom: 5px;
+      }
+      
+      .icon-text-section .item {
+          width: calc(50% - 20px); /* Adjust as needed for 2 items per row */
+      }
+  }
